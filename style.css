@@ -1,0 +1,171 @@
+@font-face {
+	font-family: Beattingvile;
+	src: url("Beattingvile.otf");
+}
+
+body {
+    background-image: url("./images/backpilt.png");
+    padding-left: 10px;
+}
+
+h1 {
+	font-family: Beattingvile;
+	font-size: 100px;
+	color: white;
+	text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+	text-align: center;
+}
+p {
+	font-family: Times New Roman;
+	font-size: 24px;
+	color: white;
+	margin-left: 20px;
+	position: relative;
+	text-align: center;
+}
+
+ul, li {
+	font-family: Times New Roman;
+	font-size: 24px;
+	color: white;
+	margin-right: 20px;
+	text-align: center;
+	list-style: inside;
+}
+
+img {
+	border:none;
+}
+
+iframe {
+	width: 480px;
+	height: 375px;
+	position: relative;
+	left: 20px;
+	margin: auto;
+}
+
+pre{
+	display:block;
+	font:100% "Courier New", Courier, monospace;
+	padding:10px;
+	border:1px solid #bae2f0;
+	background:#e3f4f9;	
+	margin:.5em 0;
+	overflow:auto;
+	width:800px;
+}
+
+#screenshot{
+	position:absolute;
+	border:1px solid #ccc;
+	background:#333;
+	padding:5px;
+	display:none;
+	color:#fff;
+	}
+
+.column {
+		float: left;
+		width: 40%;
+		margin-left: 100px;
+		}
+		
+		.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+		
+		@media screen and (max-width: 300px) {
+			.column {
+			width: 100%;
+			}
+		}
+
+	
+
+.lingid {
+  background-color: WhiteSmoke;
+  border: 2px dashed black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.poster {
+	left: 0px;
+	width: 665px;
+	height: 1000px;
+	box-shadow: 10px 10px 5px black;
+}
+
+.slider-holder {
+    width: 800px;
+    height: 400px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+    
+.image-holder {
+    width: 2400px;
+    background-color: grey;
+    height: 400px;
+    clear: both;
+    position: relative;
+    
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+    
+.slider-image {
+    width: 800px;
+    height: 400px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+    
+#slider-image-1:target ~ .image-holder {
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-holder {
+    left: -800px;
+}
+
+#slider-image-3:target ~ .image-holder {
+    left: -1600px;
+}
+
+.button-holder {
+    position: relative;
+    top: -20px;
+}
+
+.slider-change {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: grey;
+}
